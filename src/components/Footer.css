@@ -1,0 +1,122 @@
+.footer {
+  background-color: rgb(0, 13, 98);
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 50px 10px 50px;
+}
+
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.footer .footer-top .footer-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-top .footer-desc .logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-top .footer-desc .logo img {
+  width: 50px;
+}
+.footer .footer-top .footer-desc .logo h2 {
+  color: #eee;
+  font-size: 30px;
+  line-height: 1;
+}
+.footer .footer-top .footer-desc p {
+  color: #ddd;
+  max-width: 70%;
+  margin-bottom: 20px;
+}
+.footer .footer-top .footer-desc .sub {
+  display: flex;
+}
+.sub input {
+  padding: 0 20px;
+}
+.sub input:focus {
+  outline: none;
+}
+.sub input::placeholder {
+  color: #fff;
+}
+.footer .footer-top .footer-desc .sub input {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 0;
+  flex: 1;
+}
+.footer .footer-top .footer-desc .sub button {
+  background-color: var(--btn-color);
+  border: 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #eee;
+}
+
+.footer .footer-top .footer-list {
+  list-style: none;
+  color: #bbb;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .footer-top .footer-list li {
+  cursor: pointer;
+}
+
+.footer .footer-top .footer-list h3 {
+  color: #eee;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #aaa;
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.footer-bottom .social {
+  list-style: none;
+  display: flex;
+  color: #aaa;
+  gap: 40px;
+  font-size: 25px;
+}
+.footer-bottom .social li {
+  cursor: pointer;
+}
+.footer-bottom .social li:hover {
+  color: #ccc;
+}
+.footer-bottom span {
+  color: #aaa;
+}
+@media (max-width: 673px) {
+  .footer-bottom {
+    justify-content: center;
+  }
+  .sub {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .sub input {
+    min-height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer p {
+    max-width: 100% !important;
+  }
+}

@@ -1,0 +1,114 @@
+.header {
+  background-image: linear-gradient(
+    140deg,
+    var(--main-color),
+    var(--secondary-color)
+  );
+  width: 100%;
+  height: 50vh;
+  border-radius: 20px 20px 300px 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header .header-data,
+.header .header-image {
+  flex: 1;
+  padding: 50px;
+}
+.header .header-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header .header-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.header .header-data h1 {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 85px;
+}
+.header .header-data p {
+  color: #efefef;
+  max-width: 80%;
+}
+
+.header .header-data .buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.header .header-data .buttons button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.header .header-data .buttons button:focus {
+  outline: none;
+}
+.header .header-data .buttons button:first-of-type {
+  background-color: var(--btn-color);
+}
+.header .header-data .buttons button:nth-of-type(2) {
+  border: 1px solid #ccc;
+}
+
+.header-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+}
+@media (max-width: 1630px) {
+  .header-image img {
+    left: 140px;
+    width: 80%;
+  }
+}
+@media (max-width: 1300px) {
+  .header-image img {
+    position: unset;
+  }
+  .header .header-data h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-image {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .header {
+    padding: 15px 0;
+    height: auto !important;
+    overflow: hidden;
+  }
+  .header-data {
+    padding: 10px !important;
+  }
+  .header-data h1 {
+    font-size: 40px !important;
+  }
+  .header-data p {
+    margin-top: 15px;
+    max-width: 100% !important;
+  }
+  .header {
+    border-radius: 10px;
+  }
+}
